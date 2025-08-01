@@ -21,7 +21,7 @@ const App = () => {
 
   const handleClick = () => {
     setShowCanvas(!showCanvas);
-  };
+  }; 
 
   return (
     <>
@@ -65,31 +65,33 @@ const App = () => {
           </nav>
 
           {/* Hero Section */}
-          <section className="flex-1 flex flex-col justify-center items-center px-4 md:px-0">
-            <div className="w-full max-w-5xl mx-auto py-8 md:py-16 flex flex-col md:flex-row items-center gap-8">
-              <div className="w-full md:w-1/2 space-y-8">
-                <h3 className="text-2xl md:text-4xl font-bold leading-tight md:leading-[1.2] text-white drop-shadow-lg">
-                  At <span className="text-[#ffb347]">Thirtysixstudio</span>, we build digital assets and immersive experiences for purposeful brands.
-                </h3>
-                <p className="text-base md:text-lg font-normal text-gray-200">
-                  We are a digital agency that specializes in creating engaging and interactive experiences for brands.
-                </p>
+          <section className="flex-1 flex flex-col justify-center items-center px-4 md:px-8">
+            <div className="w-full max-w-6xl mx-auto py-12 md:py-24 flex flex-col items-center text-center">
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white max-w-4xl mx-auto">
+                At <span className="text-[#ffb347] bg-clip-text bg-gradient-to-r from-[#ffb347] to-[#ff9900]">Thirtysixstudio</span>, we build digital assets and immersive experiences for purposeful brands.
+              </h3>
+              <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                We are a digital agency that specializes in creating engaging and interactive experiences for forward-thinking brands.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#"
-                  className="inline-block mt-6 px-6 py-2 bg-[#ffb347] text-black font-semibold rounded-full shadow-lg hover:bg-[#ff9900] transition-colors duration-200"
+                  className="px-8 py-3 bg-[#ffb347] hover:bg-[#ff9900] text-black font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
                 >
-                  Learn More
+                  Get Started
                 </a>
-                <div className="mt-8 flex items-center space-x-2 animate-bounce cursor-pointer select-none">
-                  <svg className="w-6 h-6 text-[#ffb347]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                  <span className="text-md text-gray-300">Scroll</span>
-                </div>
+                <a
+                  href="#"
+                  className="px-8 py-3 border-2 border-[#ffb347] text-[#ffb347] hover:bg-[#ffb347]/10 font-medium rounded-full transition-all duration-300"
+                >
+                  View Our Work
+                </a>
               </div>
-              <div className="hidden md:flex w-1/2 justify-center items-center">
-                {/* Placeholder for future hero image or animation */}
-                <div className="w-64 h-64 rounded-3xl bg-gradient-to-tr from-[#ffb347] to-[#ff9900] opacity-70 blur-2xl"></div>
+              <div className="mt-16 flex flex-col items-center">
+                <div className="w-10 h-16 rounded-full border-2 border-[#ffb347] flex items-start justify-center p-1">
+                  <div className="w-1 h-6 bg-[#ffb347] rounded-full animate-bounce"></div>
+                </div>
+                <span className="mt-4 text-sm text-gray-400">Scroll to explore</span>
               </div>
             </div>
           </section>
